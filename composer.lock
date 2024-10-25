@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "834d4093964f67b4d7d593e17321791b",
+    "content-hash": "99e46c15d9deda624fa2faf34bb0bcf5",
     "packages": [
         {
             "name": "composer/semver",
@@ -7495,6 +7495,51 @@
         }
     ],
     "packages-dev": [
+        {
+            "name": "codifyo/maker-bundle",
+            "version": "0.1.2",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/codifyo/MakerBundle.git",
+                "reference": "02761b2e2d44668c4175daccd5ada38557018fe6"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/codifyo/MakerBundle/zipball/02761b2e2d44668c4175daccd5ada38557018fe6",
+                "reference": "02761b2e2d44668c4175daccd5ada38557018fe6",
+                "shasum": ""
+            },
+            "require": {
+                "symfony/maker-bundle": "^1.0@dev"
+            },
+            "type": "library",
+            "autoload": {
+                "psr-4": {
+                    "Codifyo\\MakerBundle\\": ""
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Romain Valin",
+                    "email": "contact@codifyo.com",
+                    "homepage": "https://codifyo.com"
+                }
+            ],
+            "description": "Add the support of multi bundle app to symfony/maker-bundle",
+            "keywords": [
+                "maker-bundle",
+                "symfony"
+            ],
+            "support": {
+                "issues": "https://github.com/codifyo/MakerBundle/issues",
+                "source": "https://github.com/codifyo/MakerBundle/tree/0.1.2"
+            },
+            "time": "2021-09-28T00:49:28+00:00"
+        },
         {
             "name": "masterminds/html5",
             "version": "2.9.0",

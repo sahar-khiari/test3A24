@@ -1,4 +1,7 @@
 {
+    "codifyo/maker-bundle": {
+        "version": "0.1.2"
+    },
     "doctrine/doctrine-bundle": {
         "version": "2.13",
         "recipe": {
