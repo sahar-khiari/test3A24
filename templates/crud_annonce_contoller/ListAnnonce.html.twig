@@ -1,0 +1,39 @@
+<html>
+    <head></head>
+    <body>
+        <h1>Table of Annonce</h1>
+
+       
+
+        <table border="1" cellspacing="0" cellpadding="10">
+            <thead>
+                <tr>
+                    <th>ID</th>
+                    <th>Name</th>
+                    <th>local</th>
+                    
+                    <th>Actions</th>
+                </tr>
+            </thead>
+            <tbody>
+                {% for anoonce in annonces %}
+                    <tr>
+                        <td>{{ annonce.id }}</td>
+                        <td>{{ annonce.title }}</td>
+                        <td>{{ annonce.publication|date('Y-m-d') }}</td>
+                        <td>{{ annonce.nbrLike}}</td>
+
+                        <td>
+                            <a href="{{ path('app_annonce_edit', { 'id': annonce.id }) }}">Edit</a>
+                            <a href="{{ path('app_delete_annonce', { 'id': annonce.id }) }}" onclick="return confirm('Are you sure you want to delete this annoce?');">Delete</a>
+                        </td>
+                    </tr>
+                {% else %}
+                    <tr>
+                        <td colspan="5">No annonce found.</td>
+                    </tr>
+                {% endfor %}
+            </tbody>
+        </table>
+    </body>
+</html>

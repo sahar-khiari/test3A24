@@ -1,0 +1,11 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}Add Agence{% endblock %}
+
+{% block body %}
+    <h1>Add Agence</h1>
+    {{ form_start(form) }}
+        {{ form_widget(form) }}
+        <button class="btn">Add Agence</button>
+    {{ form_end(form) }}
+{% endblock %}
